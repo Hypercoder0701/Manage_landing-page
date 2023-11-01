@@ -236,6 +236,11 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+.lists{
+  width: 36%;
+  display: flex;
+  justify-content: space-between;
+}
 .list {
   display: flex;
   flex-direction: column;
@@ -309,6 +314,7 @@ form input {
     line-height: 150%;
     letter-spacing: -0.619px;
     max-width: 320px;
+    margin: 0 auto;
     text-align: center;
   }
   .item {
@@ -317,9 +323,53 @@ form input {
   .description .title {
     border-radius: 39px 0px 0px 39px;
     background: #fff0ec;
-    width: 100vw;
+    margin-right: -24px;
   }
   .description p {
     padding: 0;
+    margin-right: 24px;
+    text-align: left;
+  }
+  .main__candidates {
+    text-align: center;
+  }
+  .candidate {
+    display: none;
+  }
+  .in-mobile {
+    display: flex;
+    margin: 0 24px;
+  }
+  .footer-top {
+    flex-direction: column;
+    background-image: url(./images/top-footer-bg-mobile.png);
+    background-size: cover;
+    padding: 90px 32px 90px 32px;
+  }
+  .footer-top div {
+    max-width: 320px;
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 125%;
+    letter-spacing: -1px;
+  }
+  .footer-bottom{
+    flex-direction: column-reverse;
+    justify-content: start;
+    padding: 50px 32px 30px 32px;
+    height: fit-content;
+  }
+  .lists{
+    margin-top: 54px;
+    width: 100% ;
+    padding: 0 32px;
+    
+  }
+  form input{
+    width: 70%;
+    margin-right: 8px;
+  }
+  .copyright{
+    display: none;
   }
 }
